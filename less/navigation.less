@@ -8,16 +8,13 @@
     flex-flow: row wrap;
 
     h1 {
-        font-size: 4rem;
-        width: 100%;
-        margin: 1% 37%;
+        .navCenter();
     }
 
     a {
-        text-decoration: none;
-        font-size: 1.6rem;
-        color: @nav-font;
-        padding: 1% 1%;
-        font-weight: bold;
+        .navLinks();
+        @media @phone {
+            margin: 2% 3.5%;
+        }
     }
 }

@@ -171,14 +171,20 @@ p {
 .navigation h1 {
   font-size: 4rem;
   width: 100%;
-  margin: 1% 37%;
+  text-align: center;
+  margin: 1.5% 0;
 }
 .navigation a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #454A59;
-  padding: 1% 1%;
+  margin: 1% 1.8%;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .navigation a {
+    margin: 2% 3.5%;
+  }
 }
 footer {
   color: #22283B;
@@ -192,6 +198,19 @@ footer {
 }
 .home {
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    max-width: 500px;
+  }
+}
+.home .intro .header-img {
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro .header-img {
+    width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -234,6 +253,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2%;
+  color: white;
+  border-radius: 5px;
+  width: 30%;
+  height: 11%;
+}
+.home .walk .walk-text .btn:hover {
+  cursor: pointer;
+  background: white;
+  color: #22283A;
+  border: 1px outset #dee2e6;
 }
 .home .walk .walk-img {
   width: 46%;
