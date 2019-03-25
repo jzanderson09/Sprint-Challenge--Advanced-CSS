@@ -182,6 +182,10 @@ p {
   margin: 1% 1.8%;
   font-weight: bold;
 }
+.navigation a:hover {
+  color: #0218da;
+  text-decoration: underline;
+}
 @media (max-width: 500px) {
   .navigation a {
     margin: 2% 3.5%;
