@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+--> An adaptive website design that uses responsive units but mostly uses templates based on different screen sizes/resolutions, whereas a fully responsive website uses one master layout that can be loaded across many different devices with many different resolutions.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+--> Whether a site is a mobile first or desktop first website has to do with the design intentions.  Mobile first starts with a master mobile layout first which is then converted to fit larger resolutions all the way up to a desktop.  Desktop first means that it starts the master layout on a desktop design and then reforms for smaller resolutions, all the way down to mobile.  You'll notice this by how they design the website and when/where/how they implement media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+--> This makes the rem units base ten, simplifying those units.  For example, if I wanted 16px font, I could just type 1.6rem, 2.4rem for 24px and so on.  This not only allows your root ems to be in proportion with the rest of your page but also make the math much, much easier.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+--> Preprocessing is essentially a code compiler that simplifies your coding experience.  It allows you to merge different coding files (.less, .sass, etc.) into one main index while keeping the code seperate.  It also allows you to use mixins, variables, resets, really just streamlines your code for readability, easier to code and also a time saver in writing your code.  Overall, it makes the process easier so that you can build powerful websites without having to write out every single css element out individually.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+--> I love the idea of using variables in preprocessing.  Especially in the context of developing a major website among many developers.  It's much easier to remember a variable name and change when needed once instead of 300 times, versus knowing the exact hexidecimal color and then finding it 300 times in your code to change.  I however still kind of get mixed up with parametric mixins and their variable names.  I get uncertain if its like javascript, I'm not entirely sure if their parameter names have to match the names defined as their own variable elsewhere.  I would imagine like writing functions in javascript, it shouldn't matter as long as they follow the syntax but I'm still a little shaky on that. With enough practice I think I'll become more comfortable implementing them.  I also get thrown off because it seems like if you use a normal mixin, it shows up in css as a class with properties but if it's a parametric mixin, with or without variables (mixinName () or mixinName (var1, var2)), I've noticed they don't show up. I keep wanting to relate them to functions in js and not sure if I should or not.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
