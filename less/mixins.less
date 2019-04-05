@@ -1,1 +1,31 @@
 // Mixins Here
+.navCenter() {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: .4%;
+}
+
+.roundEdges() {
+    border-radius: 5px;
+}
+
+.navLinks() {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: @nav-font;
+    margin: 1% 1.8%;
+    font-weight: bold; 
+}
+
+.btnStyling(@bgcolor, @font-color) {
+    background: @bgcolor;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2%;
+    color: @font-color;
+    .roundEdges();
+    width: 30%;
+    height: 11%;
+}

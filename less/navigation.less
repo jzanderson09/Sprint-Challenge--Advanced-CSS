@@ -1,1 +1,24 @@
 // Navigation code here
+.navigation {
+    border: 1px solid @sea-shell;
+    background: @wild-sand;
+    color: @nav-font;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    h1 {
+        .navCenter();
+    }
+
+    a {
+        .navLinks();
+        &:hover {
+            color: rgb(2, 24, 218);
+            text-decoration: underline;
+        }
+        @media @phone {
+            margin: 2% 3.5%;
+        }
+    }
+}
